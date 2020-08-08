@@ -18,7 +18,9 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 	cout << "hola" << endl;
 }
 //---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 
+<<<<<<< HEAD
 
 void __fastcall TForm1::Button1Click(TObject *Sender)
 {
@@ -44,6 +46,11 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 		  }
 		}
 	}
+=======
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+    //no c
+>>>>>>> 97cac1e62d22bcee7c9a319f4ca64ad2ce031b3c
 }
 //---------------------------------------------------------------------------
 
