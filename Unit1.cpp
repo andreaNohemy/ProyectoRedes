@@ -8,7 +8,6 @@
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.fmx"
-
 using namespace std;
 TForm1 *Form1;
 //---------------------------------------------------------------------------
@@ -18,9 +17,7 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 	cout << "hola" << endl;
 }
 //---------------------------------------------------------------------------
-//---------------------------------------------------------------------------
 
-<<<<<<< HEAD
 
 void __fastcall TForm1::Button1Click(TObject *Sender)
 {
@@ -38,7 +35,6 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 		  stream = fopen(AnsiString(OpenDialog1->Files->Strings[I]).c_str(), "r");
 		  if (stream)
 		  {
-          //cambio
 			// read the first line from the file
 			fgets(firstLine, sizeof(firstLine), stream);
 			txtLinea->Text=firstLine;
@@ -46,11 +42,5 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 		  }
 		}
 	}
-=======
-void __fastcall TForm1::Button1Click(TObject *Sender)
-{
-    //no c
->>>>>>> 97cac1e62d22bcee7c9a319f4ca64ad2ce031b3c
 }
 //---------------------------------------------------------------------------
-

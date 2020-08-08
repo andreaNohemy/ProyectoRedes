@@ -5,26 +5,10 @@
     <Transaction>2020/08/07 14:37:21.000.068,=D:\Users\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
     <Transaction>2020/08/07 14:37:43.000.328,=D:\Users\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
     <Transaction>2020/08/07 14:37:46.000.010,=D:\Users\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-<<<<<<< HEAD
     <Transaction>2020/08/07 15:53:30.000.420,D:\Users\Documents\Embarcadero\Studio\Projects\Unit1.h=D:\Users\Documents\Embarcadero\Studio\Projects\redes\Unit1.h</Transaction>
     <Transaction>2020/08/07 15:53:30.000.420,D:\Users\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Users\Documents\Embarcadero\Studio\Projects\redes\Unit1.fmx</Transaction>
     <Transaction>2020/08/07 15:53:30.000.420,D:\Users\Documents\Embarcadero\Studio\Projects\Unit1.cpp=D:\Users\Documents\Embarcadero\Studio\Projects\redes\Unit1.cpp</Transaction>
     <Transaction>2020/08/07 15:53:36.000.157,D:\Users\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=D:\Users\Documents\Embarcadero\Studio\Projects\redes\Project1PCH1.h</Transaction>
     <Transaction>2020/08/07 15:53:39.000.102,D:\Users\Documents\Embarcadero\Studio\Projects\Project1.cbproj=D:\Users\Documents\Embarcadero\Studio\Projects\redes\Project1.cbproj</Transaction>
   </Transactions>
-=======
-    <Transaction>2020/08/07 15:53:30.000.420,D:\Users\Documents\Embarcadero\Studio\Projects\redes\Unit1.cpp=D:\Users\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2020/08/07 15:53:30.000.420,D:\Users\Documents\Embarcadero\Studio\Projects\redes\Unit1.fmx=D:\Users\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2020/08/07 15:53:30.000.420,D:\Users\Documents\Embarcadero\Studio\Projects\redes\Unit1.h=D:\Users\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
-    <Transaction>2020/08/07 15:53:36.000.157,D:\Users\Documents\Embarcadero\Studio\Projects\redes\Project1PCH1.h=D:\Users\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2020/08/07 15:53:39.000.102,D:\Users\Documents\Embarcadero\Studio\Projects\redes\Project1.cbproj=D:\Users\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
-  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
-    <File Path="Project1.cpp"/>
-    <File Path="Project1PCH1.h"/>
-    <File Path="Unit1.cpp"/>
-    <File Path="Unit1.cpp"/>
-    <File Path="Unit1.fmx"/>
-    <File Path="Unit1.h"/>
-  </ProjectSortOrder>
->>>>>>> 97cac1e62d22bcee7c9a319f4ca64ad2ce031b3c
 </BorlandProject>
