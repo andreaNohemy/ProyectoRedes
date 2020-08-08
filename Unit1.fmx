@@ -4,15 +4,15 @@ object Form1: TForm1
   Caption = 'Form1'
   ClientHeight = 411
   ClientWidth = 712
+  Position = Designed
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Label1: TLabel
     StyledSettings = [Family, FontColor]
-    Position.X = 184.000000000000000000
-    Position.Y = 32.000000000000000000
-    Size.Width = 345.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 353.000000000000000000
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 20.000000000000000000
@@ -22,18 +22,119 @@ object Form1: TForm1
     TabOrder = 0
   end
   object Button1: TButton
-    Position.X = 216.000000000000000000
-    Position.Y = 136.000000000000000000
-    Size.Width = 169.000000000000000000
-    Size.Height = 22.000000000000000000
+    Position.X = 512.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 30.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    Text = 'Muesstra el Label'
+    Text = 'Examinar...'
+    OnClick = Button1Click
   end
-  object Label2: TLabel
-    Position.X = 520.000000000000000000
-    Position.Y = 128.000000000000000000
-    Text = 'Label2'
-    TabOrder = 2
+  object OpenDialog1: TOpenDialog
+    Left = 648
+    Top = 368
+  end
+  object labelLinea: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Linea:'
+    TabOrder = 4
+  end
+  object labelMACOrigen: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Direcci'#243'n MAC Origen:'
+    TabOrder = 10
+  end
+  object labelMACDestino: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Direcci'#243'n MAC Destino:'
+    TabOrder = 5
+  end
+  object labelOrigenIP: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'IP origen:'
+    TabOrder = 13
+  end
+  object labelDestinoIP: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'IP destino:'
+    TabOrder = 9
+  end
+  object labelTipo: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Tipo:'
+    TabOrder = 7
+  end
+  object txtLinea: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 657.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+  end
+  object txtMacOrigen: TLabel
+    Position.X = 136.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 401.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+  end
+  object txtMacDestino: TLabel
+    Position.X = 144.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 401.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+  end
+  object txtOrigenIP: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 401.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+  end
+  object txtDestinoIP: TLabel
+    Position.X = 72.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 401.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+  end
+  object txtTipo: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
   end
 end
