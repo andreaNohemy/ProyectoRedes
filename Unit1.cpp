@@ -36,6 +36,7 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 		  stream = fopen(AnsiString(OpenDialog1->Files->Strings[I]).c_str(), "r");
 		  if (stream)
 		  {
+          //cambio
 			// read the first line from the file
 			fgets(firstLine, sizeof(firstLine), stream);
 			txtLinea->Text=firstLine;
