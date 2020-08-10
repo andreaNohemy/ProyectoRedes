@@ -1,7 +1,8 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  BorderStyle = Single
+  Caption = 'Leer Trama'
   ClientHeight = 411
   ClientWidth = 712
   Position = DesktopCenter
