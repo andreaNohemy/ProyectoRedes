@@ -51,7 +51,7 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 					hexString[count]=tmp;
 					tmp = "";
 					count++;
-				}else if(i == sizeof(txtHex)){ //al final
+				}else if(i == sizeof(txtHex)-1){ //al final
 					tmp += txtHex[i];
 					hexString[count] = tmp;
 				}
@@ -81,10 +81,23 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 //			txtMacDestino->Text=(hexString[0]+":"+hexString[1]+":"+hexString[2]+":"+hexString[3]+":"+hexString[4]+":"+hexString[5]).c_str();
 //			txtMacDestino->Text=(hexString[6]+":"+hexString[7]+":"+hexString[8]+":"+hexString[9]+":"+hexString[10]+":"+hexString[11]).c_str();
 
+			//procesar el etherType
+			//posicion 12 y 13
+			string tipo = (hexString[12] + hexString[13]);
+			string type;
+			if(tipo == "0806"){
+				type = "ARP";
+			}else if(tipo == "0800"){
+				type = "IPv4";
+			}else if(tipo == "8100"){
+				type = "VLAN";
+			}else if(tipo == "8035"){
+				type = "RARP";
+			}else if(tipo == "86dd" || tipo == "86DD"){
+				type = "IPv6";
+			}
 //			empezar en el byte de Ip dest.
-			unsigned char uc;
-			unsigned char popo[102];
-//            26
+//          posicion 26-29 y 30-33
 			int ipO[4];
 			int ipD[4];
 			string hexOP = "0x";
@@ -100,12 +113,11 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 
 			txtOrigenIP-> Text= (std::to_string(ipO[0]) + "." + std::to_string(ipO[1]) + "." + std::to_string(ipO[2]) + "." + std::to_string(ipO[3])).c_str();
 			txtDestinoIP-> Text= (std::to_string(ipD[0]) + "." + std::to_string(ipD[1]) + "." + std::to_string(ipD[2]) + "." + std::to_string(ipD[3])).c_str();
-			txtTipo->Text= ipO[3];
-
-
+			txtTipo->Text= (type + " 0x" + tipo).c_str();
 
 		  }
 		}
 	}
 }
 //---------------------------------------------------------------------------
+
